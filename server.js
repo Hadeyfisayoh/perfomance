@@ -14,7 +14,7 @@ app.get("/timer", (req, res) => {
   res.send(`Ding ding ding ! ${process.pid}`);
 });
 
-const PORT = 3000;
+const PORT = 5000;
 console.log("Running srver.js .....");
 if (cluster.isMaster) {
   console.log("Master has been started");
